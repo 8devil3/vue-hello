@@ -13,20 +13,30 @@
 <body>
     <div id="root">
         <h1>{{ msg }}</h1>
+
         <img :src='img' alt="">
+
         <h3>Genera un nuova immagine casuale</h3>
+
         <div class="img-size">
+
             <div class="input-field">
                 <label for="width">Larghezza in px</label>
                 <input v-model="width" type="number" id="width">
             </div>
+
             <div class="input-field">
                 <label for="heigth">Altezza in px</label>
                 <input v-model="height" type="number" id="heigth">
             </div>
+            
         </div>
+
         <button @click="newImg">nuova immagine</button>
+
     </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="main.js"></script>
 </body>

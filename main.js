@@ -8,8 +8,11 @@ const vueApp = new Vue({
         height: 250
     },
     methods: {
+        rndNum: function() {
+            return Math.floor(Math.random() * 100);
+        },
         newImg: function() {
-            this.img = this.baseImgURL + this.width + '/' + this.height + '?random=' + Math.floor(Math.random() * 100);
+            this.img = this.baseImgURL + this.width + '/' + this.height + '?random=' + this.rndNum();
         }
     }
 });
