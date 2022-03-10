@@ -1,6 +1,8 @@
 const vueApp = new Vue({
-    el: '#root',
+    el: "#root",
     data: {
-        msg: 'Hello World'
-    }
-})
+        msg: "Hello World",
+        img: 'https://picsum.photos/200/300?random=1',
+    },
+});
+
